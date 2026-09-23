@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="App Information icon">
+  <defs>
+    <linearGradient id="bg" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#1d4ed8" />
+      <stop offset="100%" stop-color="#60a5fa" />
+    </linearGradient>
+  </defs>
+  <rect width="256" height="256" rx="52" fill="url(#bg)"/>
+  <rect x="46" y="46" width="164" height="164" rx="28" fill="rgba(255,255,255,0.18)"/>
+  <path d="M94 86h68c11.05 0 20 8.95 20 20v44c0 11.05-8.95 20-20 20H94c-11.05 0-20-8.95-20-20V106c0-11.05 8.95-20 20-20zm0 52h68M105 73v30m46-30v30M112 152h32" fill="none" stroke="#ffffff" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="128" cy="169" r="9" fill="#ffffff"/>
+</svg>

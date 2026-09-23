@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App Information</title>
+    <meta name="theme-color" content="#1d4ed8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="App Information" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="assets/icon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Archive</p>
+        <h1>App Information</h1>
+      </div>
+      <button id="install-btn" class="install-btn" type="button" hidden>Install app</button>
+    </header>
+
+    <main class="container">
+      <section class="intro panel">
+        <h2>Saved iOS app metadata</h2>
+        <p>Browse the catalog and install this app on your Home Screen.</p>
+        <ol>
+          <li>Open this page in Safari.</li>
+          <li>Tap the Share button.</li>
+          <li>Select Add to Home Screen.</li>
+          <li>Tap Add.</li>
+        </ol>
+      </section>
+
+      <section class="toolbar panel">
+        <label class="search-field">
+          <span>Search</span>
+          <input
+            id="search-input"
+            type="search"
+            placeholder="Search by app name or bundle ID"
+            aria-label="Search app list"
+          />
+        </label>
+
+        <label class="filter-field">
+          <span>Platform</span>
+          <select id="platform-filter" aria-label="Filter by platform">
+            <option value="all">All</option>
+            <option value="iOS">iOS</option>
+          </select>
+        </label>
+      </section>
+
+      <section id="app-list" class="app-grid" aria-live="polite"></section>
+    </main>
+
+    <div id="app-modal" class="modal hidden" aria-hidden="true">
+      <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button id="close-modal" class="close-btn" type="button" aria-label="Close details">×</button>
+        <h2 id="modal-title">App details</h2>
+        <dl id="modal-details" class="details-list"></dl>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

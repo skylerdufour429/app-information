@@ -1,0 +1,17 @@
+{
+  "name": "App Information",
+  "short_name": "AppInfo",
+  "description": "Archive of iOS app metadata.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#1d4ed8",
+  "icons": [
+    {
+      "src": "assets/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
